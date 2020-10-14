@@ -33,7 +33,10 @@ public class Task3 implements Task {
 
         for (int i = 0; i < symbols.size(); i++) {
             char[] tmp = symbols.get(i).toCharArray();
-            tmp[1] = (char) random.nextInt(random.nextInt(92) + 32);
+            char ch = (char) random.nextInt(random.nextInt(92) + 32);
+            while (symbols.get(i).contains(String.valueOf(ch))) {
+                tmp[1] = (char) random.nextInt(random.nextInt(92) + 32);
+            }
             symbols.set(i, new String(tmp));
         }
 

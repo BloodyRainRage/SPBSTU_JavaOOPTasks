@@ -22,7 +22,7 @@ public class Task1 implements Task{
         shuffle(list, random);
 
         System.out.println("Edited array");
-        System.out.println(list);
+        System.out.println(shuffle(list, random));
 
         System.out.println("Reshuffled using Collections.shuffle()");
         Collections.shuffle(list, random);
@@ -31,12 +31,28 @@ public class Task1 implements Task{
         System.out.println("-----END------");
     }
 
-    public void shuffle(List<Integer> list, Random rnd) {
+    public List<Integer> shuffle(List<Integer> list, Random rnd) {
+        List<Integer> tmp = new ArrayList<>(list);
         int size = list.size();
-        if (size < 5 || list instanceof RandomAccess) {
-            for (int i = 0; i < list.size(); i++)
-                Collections.swap(list, i, rnd.nextInt(i+1));
+
+        while (checkIfFullyShuffled(list, tmp)) {
+            System.out.println(checkIfFullyShuffled(list, tmp));
+            if (size < 5 || list instanceof RandomAccess) {
+                for (int i = 0; i < list.size(); i++) {
+                    Collections.swap(tmp, i, rnd.nextInt(i + 1));
+                }
+            }
         }
+
+        return tmp;
+    }
+
+    private boolean checkIfFullyShuffled(List<Integer> list, List<Integer> shuffled){
+        for (int i = 0; i < list.size(); i++){
+            if (!list.get(i).equals(shuffled.get(i))) return false;
+        }
+
+        return true;
     }
 
     //just for sure

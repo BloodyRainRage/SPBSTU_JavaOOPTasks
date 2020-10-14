@@ -42,16 +42,16 @@ public class Task2 implements Task {
         int max;
         List<Integer> maximums = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            max = input.get(i).get(1);
+            max = input.get(i).get(0);
             for (int j = 0; j < 10; j++) {
                 if (input.get(i).get(j) > max)
                     max = input.get(i).get(j);
             }
             maximums.add(max);
         }
-        int min = maximums.get(1);
+        int min = maximums.get(0);
         int line = -1;
-        for (int i = 1; i < maximums.size(); i++) {
+        for (int i = 0; i < maximums.size(); i++) {
             if (maximums.get(i) < min) {
                 min = maximums.get(i);
                 line = i;
