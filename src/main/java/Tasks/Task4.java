@@ -12,8 +12,8 @@ public class Task4 implements Task {
         System.out.println("----Task 4----");
 
         Triangle triangle = new Triangle(new Point(0, 0),
-                                            new Point(0, 2),
-                                            new Point(2, 0));
+                new Point(0, 2),
+                new Point(2, 0));
 
         System.out.println("Triangle area " + triangle.getArea());
         System.out.println("Triangle perimeter " + triangle.getPerimeter());
@@ -31,7 +31,6 @@ public class Task4 implements Task {
         Point a, b, c;
 
         public Triangle() {
-
         }
 
         public Triangle(Point a, Point b, Point c) {
@@ -44,7 +43,7 @@ public class Task4 implements Task {
             this.bc = b.getDistance(c);
         }
 
-        public Triangle(double ab, double bc, double ac) {
+        private Triangle(double ab, double bc, double ac) {
             this.ab = ab;
             this.bc = bc;
             this.ac = ac;
@@ -60,9 +59,9 @@ public class Task4 implements Task {
             return Math.sqrt(p * (p - ab) * (p - bc) * (p - ac));
         }
 
-        public Point getMeridianCross(){
-            return new Point((a.x + b.x + c.x)/3,
-                             (a.y +b.y + c.y)/3);
+        public Point getMeridianCross() {
+            return new Point((a.x + b.x + c.x) / 3,
+                    (a.y + b.y + c.y) / 3);
         }
 
         public double getAb() {
@@ -90,10 +89,10 @@ public class Task4 implements Task {
         }
 
         @Override
-        public String toString(){
-            return  "A " + this.a.toString()+ "\n" +
-                    "B " + this.b.toString()+ "\n" +
-                    "C " +this.c.toString() + "\n" +
+        public String toString() {
+            return "A " + this.a.toString() + "\n" +
+                    "B " + this.b.toString() + "\n" +
+                    "C " + this.c.toString() + "\n" +
                     "AB = " + a.getDistance(b) + "\n" +
                     "BC = " + b.getDistance(c) + "\n" +
                     "AC = " + a.getDistance(c);
@@ -116,8 +115,8 @@ public class Task4 implements Task {
         }
 
         @Override
-        public String toString(){
-            return "(" + this.x + "; " + this.y +")";
+        public String toString() {
+            return "(" + this.x + "; " + this.y + ")";
         }
     }
 }

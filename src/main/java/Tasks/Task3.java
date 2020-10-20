@@ -35,8 +35,9 @@ public class Task3 implements Task {
             char[] tmp = symbols.get(i).toCharArray();
             char ch = (char) random.nextInt(random.nextInt(92) + 32);
             while (symbols.get(i).contains(String.valueOf(ch))) {
-                tmp[1] = (char) random.nextInt(random.nextInt(92) + 32);
+                ch = (char) random.nextInt(random.nextInt(92) + 32);
             }
+            tmp[1] = ch;
             symbols.set(i, new String(tmp));
         }
 
