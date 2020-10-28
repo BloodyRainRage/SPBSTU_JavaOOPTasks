@@ -78,7 +78,7 @@ public class Task5 implements Task {
     }
 
     private void saveNumberToDeque(Integer num, int amountOfNulls) {
-        System.out.println("amount " + amountOfNulls);
+//        System.out.println("amount " + amountOfNulls);
         while (num > 0) {
             stack.push(num % 10);
             num /= 10;

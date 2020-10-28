@@ -33,7 +33,8 @@ public class Task8 implements Task {
                 }
             }
 
-        } catch (ClassNotFoundException | IllegalAccessException | InvocationTargetException | InstantiationException | NoSuchMethodException e) {
+        } catch (ClassNotFoundException | IllegalAccessException | InvocationTargetException |
+                    InstantiationException | NoSuchMethodException e) {
             e.printStackTrace();
         }
 

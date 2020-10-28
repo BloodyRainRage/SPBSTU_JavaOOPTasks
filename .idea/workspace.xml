@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2718349-45f0-4b55-891d-ba0af40185aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tasks/Task8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tasks/Task8pack/CustomAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tasks/Task8pack/TaskClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tasks/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tasks/Task5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tasks/Task8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tasks/Task8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tasks/Task8pack/CustomAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tasks/Task8pack/CustomAnnotation.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CourseProject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -95,6 +95,9 @@
       <workItem from="1603121911989" duration="286000" />
       <workItem from="1603206587304" duration="99000" />
       <workItem from="1603206992283" duration="9086000" />
+      <workItem from="1603290227578" duration="809000" />
+      <workItem from="1603897273818" duration="3524000" />
+      <workItem from="1603908505501" duration="87000" />
     </task>
     <servers />
   </component>
